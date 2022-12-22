@@ -1,0 +1,13 @@
+membre) references membres(id_membre)
+ 
+);
+
+create table commentaires(
+   id_commentaire int(11) primary key auto_increment ,
+   date_heure_commentaire datetime,
+   texte_commentaire varchar(600),
+   id_publication varchar(300),
+   id_membre varchar(20),
+   foreign key (id_publication) references publications(id_publication)
+);
+

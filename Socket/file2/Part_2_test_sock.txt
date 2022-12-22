@@ -1,0 +1,11 @@
+key (id_membre1) references membres(id_membre),
+   foreign key (id_membre2) references membres(id_membre)
+);
+
+create table publications (
+   id_membre int(11),
+   id_publication int(100) primary key auto_increment,
+   date_heure_publication datetime,
+   texte_publication varchar(600),
+   type_affichage int(11),
+   foreign key (id_
